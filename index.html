@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang thẻ lật</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Nút xáo trộn -->
+   
+
+    <!-- Ô nhập dữ liệu cho từng thẻ -->
+    <div class="input-container">
+        <div class="input-group">
+            <label for="card-index">Chọn thẻ:</label>
+            <input type="number" id="card-index" min="1" max="50" value="1">
+        </div>
+    
+        <div class="input-group">
+            <label for="front-value">Mặt trước:</label>
+            <input type="text" id="front-value" placeholder="Day">
+        </div>
+    
+        <div class="input-group">
+            <label for="back-value">Mặt sau:</label>
+            <input type="text" id="back-value" placeholder="Ngày">
+        </div>
+    
+        <div class="button-group">
+            <button onclick="updateCard()">Cập nhật thẻ</button>
+            <button onclick="shuffleCards()">Xáo trộn thẻ</button>
+            <button onclick="clearAllCards()">Xóa tất cả</button>
+        </div>
+    </div>
+    
+    
+
+    <div class="card-container" id="card-container">
+        <!-- Các thẻ sẽ được render bằng JavaScript -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
