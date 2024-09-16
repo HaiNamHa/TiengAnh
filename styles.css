@@ -75,6 +75,7 @@ input[type="number"], input[type="text"] {
     perspective: 1000px;
     width: 180px;
     height: 180px;
+    cursor: pointer;
 }
 
 .card-inner {
