@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang thẻ lật</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <!-- Nút xáo trộn -->
@@ -26,12 +27,11 @@
             <label for="back-value">Mặt sau:</label>
             <input type="text" id="back-value" placeholder="Ngày">
         </div>
-    
-        <div class="button-group">
-            <button onclick="updateCard()">Cập nhật thẻ</button>
-            <button onclick="shuffleCards()">Xáo trộn thẻ</button>
-            <button onclick="clearAllCards()">Xóa tất cả</button>
-        </div>
+            <div class="button-group">
+                <button onclick="updateCard()"><i class="fas fa-sync-alt"></i> Cập nhật thẻ</button>
+                <button onclick="shuffleCards()"><i class="fas fa-random"></i> Xáo trộn thẻ</button>
+                <button onclick="clearAllCards()"><i class="fas fa-trash"></i> Xóa tất cả</button>
+            </div>
     </div>
     
     
